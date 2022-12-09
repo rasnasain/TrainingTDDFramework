@@ -44,6 +44,7 @@ public class LoginPageTest extends TestBase {
 		dp = lp.login(prop.getProperty("username"),prop.getProperty("password"));
 		Thread.sleep(1000);
 		Assert.assertTrue(dp.dashboardPageHeader());
+		System.out.println("Logged in successfully!!");
 	}
 	
 	@Test
